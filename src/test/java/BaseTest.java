@@ -26,12 +26,13 @@ public class BaseTest {
     }
     @BeforeEach
     void setup() throws MalformedURLException {
-//       // Запуск тестов через удалённый сервер, например при настройках CI/CD
+//       // Запуск тестов через удалённый Selenium-сервер, например при настройках CI/CD
 //         DesiredCapabilities abilities = DesiredCapabilities.chrome();
 //       --  Новый класс, рекомендуемый вместо DesiredCapabilities
 //        // ChromeOptions abilities = new ChromeOptions();
 //         driver = new RemoteWebDriver(new URL("http://172.23.16.1:4444"),abilities);
 
+//        Запуск с помощью библиотеки WebDriverManager
         driver = new ChromeDriver();
     }
     @Test
